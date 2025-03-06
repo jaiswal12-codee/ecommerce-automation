@@ -4,7 +4,7 @@ from pages.login_page import LoginPage
 
 class TestLogin(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path="/path/to/chromedriver")
+        self.driver = webdriver.Chrome()
         self.login_page = LoginPage(self.driver)
 
     def test_login(self):
